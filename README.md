@@ -1,60 +1,98 @@
-# CodeIgniter 4 Framework
+# Youth Center — Application Web (CodeIgniter 4)
 
-## What is CodeIgniter?
+## Présentation
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+Youth Center est une application web développée en PHP avec le framework CodeIgniter 4.  
+Le projet a été réalisé dans le cadre de la Licence 3 Informatique – RESAWEB 2025 à l’Université de Bretagne Occidentale (UBO Brest).
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+L’application permet à une association de jeunesse de gérer :
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+- les demandes de contact,
+- le suivi des messages,
+- les comptes utilisateurs,
+- les réservations de ressources.
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+Le système propose des espaces distincts pour les visiteurs, les membres et les administrateurs.
 
-## Important Change with index.php
+---
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+# Technologies utilisées
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+- PHP
+- CodeIgniter 4
+- MySQL
+- phpMyAdmin
+- SQL (tables, vues, fonctions, procédures stockées, triggers)
+- HTML
+- CSS
+- JavaScript
+- Visual Studio Code
 
-**Please** read the user guide for a better explanation of how CI4 works!
+---
 
-## Repository Management
+# Méthodologie
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+Le projet a été développé selon la méthodologie Agile Scrum avec :
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+- un découpage en sprints,
+- un backlog produit,
+- des livraisons progressives,
+- une amélioration continue.
 
-## Contributing
+---
 
-We welcome contributions from the community.
+# Fonctionnalités principales
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+## Visiteur
 
-## Server Requirements
+- Accès à la partie publique
+- Consultation des actualités
+- Formulaire de contact avec validation
+- Suivi des demandes via un code unique
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+## Membre
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+- Connexion sécurisée
+- Consultation des réservations
+- Réservation de ressources selon les créneaux disponibles
+- Visualisation de l’état des réservations
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
+## Administrateur
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+- Gestion des messages de contact
+- Gestion des ressources
+- Consultation des réservations par date et par ressource
+- Accès aux statistiques
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+---
+
+# Architecture MVC
+
+L’application respecte le pattern MVC (Model – View – Controller).
+
+- **Controllers** : gestion des routes et de la logique applicative
+- **Models** : accès à la base de données et règles métier
+- **Views** : interface utilisateur (HTML / CSS)
+
+CodeIgniter assure la séparation des responsabilités et l’organisation globale du projet.
+
+---
+
+# Base de données
+
+La base de données MySQL comprend :
+
+- des tables relationnelles,
+- des vues SQL,
+- des fonctions,
+- des procédures stockées,
+- des triggers.
+
+---
+
+# Installation locale
+
+## 1. Cloner le dépôt GitHub
+
+```bash
+git clone https://github.com/VOTRE-USERNAME/Youth-Center-Web.git
