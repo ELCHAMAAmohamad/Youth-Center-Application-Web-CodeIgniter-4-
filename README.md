@@ -95,4 +95,4 @@ La base de données MySQL comprend :
 ## 1. Cloner le dépôt GitHub
 
 ```bash
-git clone https://github.com/VOTRE-USERNAME/Youth-Center-Web.git
+git clone https://github.com/ELCHAMAAmohamad/Youth-Center-Web.git
