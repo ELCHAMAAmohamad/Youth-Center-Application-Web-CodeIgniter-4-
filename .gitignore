@@ -1,4 +1,6 @@
 .env
+system/
 vendor/
+tests/
 writable/cache/
 writable/logs/
