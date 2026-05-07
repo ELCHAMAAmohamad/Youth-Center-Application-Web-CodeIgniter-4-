@@ -1,0 +1,4 @@
+.env
+vendor/
+writable/cache/
+writable/logs/
